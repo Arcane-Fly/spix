@@ -112,7 +112,6 @@
     "contentDispositionType": "inline"
   },
   "outputDirectory": "build",
-  "public": true,
   "redirects": [
     { "source": "/me", "destination": "/profile.html", "permanent": false },
     { "source": "/user", "destination": "/api/user", "statusCode": 301 },
