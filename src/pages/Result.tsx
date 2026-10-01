@@ -114,7 +114,7 @@ export const Result = () => {
                     {/* Display error message */}
                     {error && (
                         <div className="text-red-600 p-4 border border-red-300 rounded bg-red-50 my-4">
-                    Error: {typeof error === 'object' && error.message ? error.message : error || "An unexpected error occurred."}
+                    Error: {error instanceof Error ? error.message : (typeof error === 'string' ? error : "An unexpected error occurred.")}
                         </div>
                     )}
                 </div>
